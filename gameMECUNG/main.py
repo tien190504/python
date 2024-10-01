@@ -1,12 +1,14 @@
 import heapq
 import tkinter as tk
 import random
+import tkinter.messagebox as messagebox
 
 # Khởi tạo cửa sổ game
 window = tk.Tk()
 window.geometry('758x755')
-first_label = tk.Label(text="Demo game me cung", font=("Arial", 20, "bold"))
-first_label.pack(side=tk.TOP)
+window.title("DEMO MÊ CUNG")
+# first_label = tk.Label(text="Demo game mê cung", font=("Arial", 20, "bold"))
+# first_label.pack(side=tk.TOP)
 
 # Kích thước mê cung
 maze_size = 30
@@ -62,6 +64,8 @@ def generate_maze():
     maze[start_y][start_x] = 1
     dfs(start_x, start_y)
 
+
+
 # Hàm heuristic sử dụng khoảng cách Manhattan
 def heuristic1(a):
     return abs(a[0] - end_pos[0]) + abs(a[1] - end_pos[1])
@@ -75,7 +79,7 @@ def reconstruct_path(came_from, current):
         current = came_from[current]
     found_path.reverse()  # Đảo ngược để có đường đi từ bắt đầu đến kết thúc
 
-# Hàm tìm đường đi trong mê cung
+# Hàm tìm đường đi trong mê cung vào nút find path
 def find_path():
     global found_path, clicked  # Đảm bảo sử dụng biến toàn cục
     if not start_pos or not end_pos:
@@ -108,7 +112,18 @@ def find_path():
                     # Chỉ thêm vào open_set nếu chưa có
                     if neighbour not in [i[1] for i in open_set]:
                         heapq.heappush(open_set, (f_score[neighbour], neighbour))
+    messagebox.showinfo("Thông báo", "Không tìm thấy đường đi")
 
+#hàm nút new game
+def new_game():
+    global start_pos, end_pos, found_path, clicked
+    # đặt lại các giá trị
+    start_pos = None
+    end_pos = None
+    found_path = []
+    clicked = 0
+    generate_maze()
+    draw_maze()
 # Hàm xử lý sự kiện khi nhấp chuột để chọn điểm bắt đầu và kết thúc
 def click_event(event):
     global start_pos, end_pos, clicked
@@ -126,24 +141,42 @@ def click_event(event):
                 clicked += 1
                 draw_maze()
 
+
+#Hàm nút thoát
+
 # Hàm tạo hiệu ứng
 def animation_path(step=0):
     if step < len(found_path):
         row, col = found_path[step]
-        x1 = col * cell_size
-        y1 = row * cell_size
-        x2 = x1 + cell_size
-        y2 = y1 + cell_size
-        canvas.create_oval(x1, y1, x2, y2, fill="Yellow")
+        if end_pos != (row, col):
+            x1 = col * cell_size
+            y1 = row * cell_size
+            x2 = x1 + cell_size
+            y2 = y1 + cell_size
+            canvas.create_oval(x1, y1, x2, y2, fill="Yellow")
         window.after(10, animation_path, step + 1)  # Điều chỉnh thời gian cho hiệu ứng
+
+
 
 # Tạo sự kiện click để chọn vị trí
 canvas.bind("<Button-1>", click_event)
 
+#Tạo button để chứa các nút
+button_frame = tk.Frame(window)
+button_frame.pack(side=tk.TOP)
+
+
 # Tạo nút để tìm đường đi
-find_button = tk.Button(window, text="Find", command=find_path)
+find_button = tk.Button(button_frame, text="Find path", command=find_path)
 find_button.pack(side=tk.LEFT)
 
+#Tạo nút new game để đổi mới trò chơi
+new_game_buttoon = tk.Button(button_frame, text="New Game", command=new_game)
+new_game_buttoon.pack(side=tk.LEFT)
+
+# NÚT FIND di chuyển ra giữa thêm nút new game và nút thoát
+exit_button = tk.Button(button_frame, text="Exit", command=exit)
+exit_button.pack(side=tk.LEFT)
 # Khởi tạo mê cung và vẽ nó
 generate_maze()
 draw_maze()
