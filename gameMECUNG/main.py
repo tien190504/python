@@ -137,12 +137,14 @@ def click_event(event):
                 clicked += 1
                 draw_maze()
             elif clicked == 1:  # Chọn điểm kết thúc
-                end_pos = (row, col)
-                clicked += 1
-                draw_maze()
+                if start_pos == (row, col):
+                    messagebox.showwarning("Lỗi", "Điểm bắt đầu không được bằng điểm kết thúc")
+                else:
+                    end_pos = (row, col)
+                    clicked += 1
+                    draw_maze()
 
 
-#Hàm nút thoát
 
 # Hàm tạo hiệu ứng
 def animation_path(step=0):
@@ -175,6 +177,7 @@ new_game_buttoon = tk.Button(button_frame, text="New Game", command=new_game)
 new_game_buttoon.pack(side=tk.LEFT)
 
 # NÚT FIND di chuyển ra giữa thêm nút new game và nút thoát
+#Hàm nút thoát
 exit_button = tk.Button(button_frame, text="Exit", command=exit)
 exit_button.pack(side=tk.LEFT)
 # Khởi tạo mê cung và vẽ nó
