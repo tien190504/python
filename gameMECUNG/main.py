@@ -7,8 +7,8 @@ import tkinter.messagebox as messagebox
 window = tk.Tk()
 window.geometry('758x755')
 window.title("DEMO MÊ CUNG")
-# first_label = tk.Label(text="Demo game mê cung", font=("Arial", 20, "bold"))
-# first_label.pack(side=tk.TOP)
+first_label = tk.Label(text="Demo game mê cung", font=("Arial", 20, "bold"))
+first_label.pack(side=tk.TOP)
 
 # Kích thước mê cung
 maze_size = 30
@@ -16,15 +16,16 @@ cell_size = 20
 
 # Khởi tạo mê cung với tất cả là tường
 maze = [[0 for _ in range(maze_size)] for _ in range(maze_size)]
-direction = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+direction = [(-1, 0), (1, 0), (0, 1), (0, -1)]
 
 start_pos: None = None
 end_pos: None = None
+player_pos: None = None
 found_path = []
 clicked = 0  # Đếm số lần click để phân biệt điểm bắt đầu và kết thúc
 
 # Tạo khung vẽ
-canvas = tk.Canvas(window, width=maze_size * cell_size, height=maze_size * cell_size)
+canvas = tk.Canvas(window, width = maze_size * cell_size, height = maze_size * cell_size)
 canvas.pack()
 
 # Vẽ mê cung
@@ -44,6 +45,8 @@ def draw_maze():
                 canvas.create_oval(x1, y1, x2, y2, fill="Blue")
             if end_pos == (row, col):
                 canvas.create_oval(x1, y1, x2, y2, fill="Green")
+            if player_pos == (row, col):
+                canvas.create_oval(x1, y1, x2, y2, fill="Red")
 
 # Tạo mê cung bằng DFS
 def generate_maze():
@@ -80,53 +83,55 @@ def reconstruct_path(came_from, current):
     found_path.reverse()  # Đảo ngược để có đường đi từ bắt đầu đến kết thúc
 
 # Hàm tìm đường đi trong mê cung vào nút find path
-def find_path():
-    global found_path, clicked  # Đảm bảo sử dụng biến toàn cục
-    if not start_pos or not end_pos:
-        return
-
-    open_set = []
-    heapq.heappush(open_set, (0, start_pos))  # Chi phí ước lượng, tọa độ
-    came_from = {}  # Lưu trữ đường đi từ ô cha đến ô con
-    g_score = {start_pos: 0}
-    f_score = {start_pos: heuristic1(start_pos)}  # Chi phí ước lượng từ điểm bắt đầu đến điểm kết thúc
-
-    while open_set:
-        current = heapq.heappop(open_set)[1]  # Lấy ô có chi phí thấp nhất
-
-        if current == end_pos:  # Nếu đã đến điểm kết thúc
-            reconstruct_path(came_from, current)  # Gọi hàm để tái tạo đường đi
-            animation_path()  # Bắt đầu hiệu ứng hoạt hình cho đường đi
-            return
-
-        for dx, dy in direction:
-            neighbour = (current[0] + dx, current[1] + dy)
-            if 0 <= neighbour[0] < maze_size and 0 <= neighbour[1] < maze_size and maze[neighbour[0]][neighbour[1]] == 1:
-                tentative_g_score = g_score[current] + 1  # Giả sử chi phí giữa hai ô là 1
-
-                if tentative_g_score < g_score.get(neighbour, float('inf')):
-                    came_from[neighbour] = current
-                    g_score[neighbour] = tentative_g_score
-                    f_score[neighbour] = tentative_g_score + heuristic1(neighbour)
-
-                    # Chỉ thêm vào open_set nếu chưa có
-                    if neighbour not in [i[1] for i in open_set]:
-                        heapq.heappush(open_set, (f_score[neighbour], neighbour))
-    messagebox.showinfo("Thông báo", "Không tìm thấy đường đi")
+# def find_path():
+#     global found_path, clicked  # Đảm bảo sử dụng biến toàn cục
+#     if not start_pos or not end_pos:
+#         messagebox.showinfo("Thông báo", "Hãy chọn điểm bắt đầu và điểm kết thúc")
+#         return
+#
+#     open_set = []
+#     heapq.heappush(open_set, (0, start_pos))  # Chi phí ước lượng, tọa độ
+#     came_from = {}  # Lưu trữ đường đi từ ô cha đến ô con
+#     g_score = {start_pos: 0}
+#     f_score = {start_pos: heuristic1(start_pos)}  # Chi phí ước lượng từ điểm bắt đầu đến điểm kết thúc
+#
+#     while open_set:
+#         current = heapq.heappop(open_set)[1]  # Lấy ô có chi phí thấp nhất
+#
+#         if current == end_pos:  # Nếu đã đến điểm kết thúc
+#             reconstruct_path(came_from, current)  # Gọi hàm để tái tạo đường đi
+#             animation_path()  # Bắt đầu hiệu ứng hoạt hình cho đường đi
+#             return
+#
+#         for dx, dy in direction:
+#             neighbour = (current[0] + dx, current[1] + dy)
+#             if 0 <= neighbour[0] < maze_size and 0 <= neighbour[1] < maze_size and maze[neighbour[0]][neighbour[1]] == 1:
+#                 tentative_g_score = g_score[current] + 1  # Giả sử chi phí giữa hai ô là 1
+#
+#                 if tentative_g_score < g_score.get(neighbour, float('inf')):
+#                     came_from[neighbour] = current
+#                     g_score[neighbour] = tentative_g_score
+#                     f_score[neighbour] = tentative_g_score + heuristic1(neighbour)
+#
+#                     # Chỉ thêm vào open_set nếu chưa có
+#                     if neighbour not in [i[1] for i in open_set]:
+#                         heapq.heappush(open_set, (f_score[neighbour], neighbour))
+#     messagebox.showinfo("Thông báo", "Không tìm thấy đường đi")
 
 #hàm nút new game
 def new_game():
-    global start_pos, end_pos, found_path, clicked
+    global start_pos, end_pos, found_path, clicked, player_pos
     # đặt lại các giá trị
     start_pos = None
     end_pos = None
+    player_pos = None
     found_path = []
     clicked = 0
     generate_maze()
     draw_maze()
 # Hàm xử lý sự kiện khi nhấp chuột để chọn điểm bắt đầu và kết thúc
 def click_event(event):
-    global start_pos, end_pos, clicked
+    global start_pos, end_pos, clicked, player_pos
     col = event.x // cell_size
     row = event.y // cell_size
 
@@ -134,6 +139,7 @@ def click_event(event):
         if maze[row][col] == 1:  # Chỉ cho phép chọn điểm trên đường
             if clicked == 0:  # Chọn điểm bắt đầu
                 start_pos = (row, col)
+                player_pos = (row, col) #Đặt điểm bắt đầu của người chơi tại điểm bắt đầu
                 clicked += 1
                 draw_maze()
             elif clicked == 1:  # Chọn điểm kết thúc
@@ -143,8 +149,11 @@ def click_event(event):
                     end_pos = (row, col)
                     clicked += 1
                     draw_maze()
+    # else:
+    #     messagebox.showwarning("Tọa độ không thuộc mê cung")
 
-
+# Tạo sự kiện click để chọn vị trí
+canvas.bind("<Button-1>", click_event)
 
 # Hàm tạo hiệu ứng
 def animation_path(step=0):
@@ -156,32 +165,49 @@ def animation_path(step=0):
             x2 = x1 + cell_size
             y2 = y1 + cell_size
             canvas.create_oval(x1, y1, x2, y2, fill="Yellow")
-        window.after(10, animation_path, step + 1)  # Điều chỉnh thời gian cho hiệu ứng
+        window.after(15, animation_path, step + 1)  # Điều chỉnh thời gian cho hiệu ứng
 
+#Hàm di chuyển người chơi
+def move_player(dx, dy):
+    global player_pos
+    if player_pos:
+        new_pos = (player_pos[0] + dx, player_pos[1] + dy)
+        if 0 <= new_pos[0] < maze_size and 0 <= new_pos[1] < maze_size and maze[new_pos[0]][new_pos[1]] == 1:
+            player_pos = new_pos
+            draw_maze()
+            if player_pos == end_pos:
+                messagebox.showinfo("Chúc mừng!", "Bạn đã đến đích!")
 
-
-# Tạo sự kiện click để chọn vị trí
-canvas.bind("<Button-1>", click_event)
-
+#Hàm xử lý phím
+def key_event(event):
+    if event.keysym == "Up":
+        move_player(-1, 0)
+    elif event.keysym == "Down":
+        move_player(1, 0)
+    elif event.keysym == "Left":
+        move_player(0, -1)
+    elif event.keysym == "Right":
+        move_player(0, 1)
 #Tạo button để chứa các nút
 button_frame = tk.Frame(window)
 button_frame.pack(side=tk.TOP)
 
 
 # Tạo nút để tìm đường đi
-find_button = tk.Button(button_frame, text="Find path", command=find_path)
-find_button.pack(side=tk.LEFT)
+# find_button = tk.Button(button_frame, text="Find path", command=find_path)
+# find_button.pack(side=tk.LEFT)
 
 #Tạo nút new game để đổi mới trò chơi
 new_game_buttoon = tk.Button(button_frame, text="New Game", command=new_game)
 new_game_buttoon.pack(side=tk.LEFT)
 
-# NÚT FIND di chuyển ra giữa thêm nút new game và nút thoát
 #Hàm nút thoát
 exit_button = tk.Button(button_frame, text="Exit", command=exit)
 exit_button.pack(side=tk.LEFT)
+
 # Khởi tạo mê cung và vẽ nó
 generate_maze()
 draw_maze()
 
 window.mainloop()
+
