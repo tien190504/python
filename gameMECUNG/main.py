@@ -3,6 +3,8 @@ import tkinter as tk
 import random
 import tkinter.messagebox as messagebox
 
+from fontTools.ttLib.ttVisitor import visit
+
 # Khởi tạo cửa sổ game
 window = tk.Tk()
 window.geometry('758x755')
@@ -21,7 +23,8 @@ direction = [(-1, 0), (1, 0), (0, 1), (0, -1)]
 start_pos: None = None
 end_pos: None = None
 player_pos: None = None
-found_path = []
+visited_path = []
+# found_path = []
 clicked = 0  # Đếm số lần click để phân biệt điểm bắt đầu và kết thúc
 
 # Tạo khung vẽ
@@ -47,6 +50,15 @@ def draw_maze():
                 canvas.create_oval(x1, y1, x2, y2, fill="Green")
             if player_pos == (row, col):
                 canvas.create_oval(x1, y1, x2, y2, fill="Red")
+
+            if (row, col) in visited_path:
+                canvas.create_rectangle(x1, y1, x2, y2, fill="LightGreen")
+    if player_pos:
+        x1 = player_pos[1] * cell_size
+        y1 = player_pos[0] * cell_size
+        x2 = x1 + cell_size
+        y2 = y1 + cell_size
+        canvas.create_oval(x1, y1, x2, y2, fill="Red")
 
 # Tạo mê cung bằng DFS
 def generate_maze():
@@ -83,50 +95,51 @@ def reconstruct_path(came_from, current):
     found_path.reverse()  # Đảo ngược để có đường đi từ bắt đầu đến kết thúc
 
 # Hàm tìm đường đi trong mê cung vào nút find path
-# def find_path():
-#     global found_path, clicked  # Đảm bảo sử dụng biến toàn cục
-#     if not start_pos or not end_pos:
-#         messagebox.showinfo("Thông báo", "Hãy chọn điểm bắt đầu và điểm kết thúc")
-#         return
-#
-#     open_set = []
-#     heapq.heappush(open_set, (0, start_pos))  # Chi phí ước lượng, tọa độ
-#     came_from = {}  # Lưu trữ đường đi từ ô cha đến ô con
-#     g_score = {start_pos: 0}
-#     f_score = {start_pos: heuristic1(start_pos)}  # Chi phí ước lượng từ điểm bắt đầu đến điểm kết thúc
-#
-#     while open_set:
-#         current = heapq.heappop(open_set)[1]  # Lấy ô có chi phí thấp nhất
-#
-#         if current == end_pos:  # Nếu đã đến điểm kết thúc
-#             reconstruct_path(came_from, current)  # Gọi hàm để tái tạo đường đi
-#             animation_path()  # Bắt đầu hiệu ứng hoạt hình cho đường đi
-#             return
-#
-#         for dx, dy in direction:
-#             neighbour = (current[0] + dx, current[1] + dy)
-#             if 0 <= neighbour[0] < maze_size and 0 <= neighbour[1] < maze_size and maze[neighbour[0]][neighbour[1]] == 1:
-#                 tentative_g_score = g_score[current] + 1  # Giả sử chi phí giữa hai ô là 1
-#
-#                 if tentative_g_score < g_score.get(neighbour, float('inf')):
-#                     came_from[neighbour] = current
-#                     g_score[neighbour] = tentative_g_score
-#                     f_score[neighbour] = tentative_g_score + heuristic1(neighbour)
-#
-#                     # Chỉ thêm vào open_set nếu chưa có
-#                     if neighbour not in [i[1] for i in open_set]:
-#                         heapq.heappush(open_set, (f_score[neighbour], neighbour))
-#     messagebox.showinfo("Thông báo", "Không tìm thấy đường đi")
+def find_path():
+    global found_path, clicked, player_pos,start_pos, end_pos  # Đảm bảo sử dụng biến toàn cục
+    if not player_pos or not end_pos:
+        messagebox.showinfo("Thông báo", "Hãy chọn điểm bắt đầu và điểm kết thúc")
+        return
+
+    open_set = []
+    heapq.heappush(open_set, (0, player_pos))  # Chi phí ước lượng, tọa độ
+    came_from = {}  # Lưu trữ đường đi từ ô cha đến ô con
+    g_score = {player_pos: 0}
+    f_score = {player_pos: heuristic1(start_pos)}  # Chi phí ước lượng từ điểm bắt đầu đến điểm kết thúc
+
+    while open_set:
+        current = heapq.heappop(open_set)[1]  # Lấy ô có chi phí thấp nhất
+
+        if current == end_pos:  # Nếu đã đến điểm kết thúc
+            reconstruct_path(came_from, current)  # Gọi hàm để tái tạo đường đi
+            animation_path()  # Bắt đầu hiệu ứng hoạt hình cho đường đi
+            return
+
+        for dx, dy in direction:
+            neighbour = (current[0] + dx, current[1] + dy)
+            if 0 <= neighbour[0] < maze_size and 0 <= neighbour[1] < maze_size and maze[neighbour[0]][neighbour[1]] == 1:
+                tentative_g_score = g_score[current] + 1  # Giả sử chi phí giữa hai ô là 1
+
+                if tentative_g_score < g_score.get(neighbour, float('inf')):
+                    came_from[neighbour] = current
+                    g_score[neighbour] = tentative_g_score
+                    f_score[neighbour] = tentative_g_score + heuristic1(neighbour)
+
+                    # Chỉ thêm vào open_set nếu chưa có
+                    if neighbour not in [i[1] for i in open_set]:
+                        heapq.heappush(open_set, (f_score[neighbour], neighbour))
+    messagebox.showinfo("Thông báo", "Không tìm thấy đường đi")
 
 #hàm nút new game
 def new_game():
-    global start_pos, end_pos, found_path, clicked, player_pos
+    global start_pos, end_pos, found_path, clicked, player_pos, visited_path
     # đặt lại các giá trị
     start_pos = None
     end_pos = None
     player_pos = None
     found_path = []
     clicked = 0
+    visited_path = []
     generate_maze()
     draw_maze()
 # Hàm xử lý sự kiện khi nhấp chuột để chọn điểm bắt đầu và kết thúc
@@ -173,6 +186,7 @@ def move_player(dx, dy):
     if player_pos:
         new_pos = (player_pos[0] + dx, player_pos[1] + dy)
         if 0 <= new_pos[0] < maze_size and 0 <= new_pos[1] < maze_size and maze[new_pos[0]][new_pos[1]] == 1:
+            visited_path.append(player_pos)
             player_pos = new_pos
             draw_maze()
             if player_pos == end_pos:
@@ -188,14 +202,17 @@ def key_event(event):
         move_player(0, -1)
     elif event.keysym == "Right":
         move_player(0, 1)
+    if event.state & 0x0004 and event.keysym == "f":
+        find_path()
 #Tạo button để chứa các nút
 button_frame = tk.Frame(window)
 button_frame.pack(side=tk.TOP)
 
-
+#liên kết sự kiện move player
+window.bind("<Key>", key_event)
 # Tạo nút để tìm đường đi
-# find_button = tk.Button(button_frame, text="Find path", command=find_path)
-# find_button.pack(side=tk.LEFT)
+find_button = tk.Button(button_frame, text="Find path", command=find_path)
+find_button.pack(side=tk.LEFT)
 
 #Tạo nút new game để đổi mới trò chơi
 new_game_buttoon = tk.Button(button_frame, text="New Game", command=new_game)
