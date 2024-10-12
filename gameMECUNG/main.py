@@ -3,7 +3,7 @@ import tkinter as tk
 import random
 import tkinter.messagebox as messagebox
 
-from fontTools.ttLib.ttVisitor import visit
+
 
 # Khởi tạo cửa sổ game
 window = tk.Tk()
@@ -15,6 +15,7 @@ first_label.pack(side=tk.TOP)
 # Kích thước mê cung
 maze_size = 30
 cell_size = 20
+wall_margin = 4 #kích thước của tương
 
 # Khởi tạo mê cung với tất cả là tường
 maze = [[0 for _ in range(maze_size)] for _ in range(maze_size)]
@@ -129,7 +130,15 @@ def find_path():
                     if neighbour not in [i[1] for i in open_set]:
                         heapq.heappush(open_set, (f_score[neighbour], neighbour))
     messagebox.showinfo("Thông báo", "Không tìm thấy đường đi")
+    reset_position()
+    draw_maze()
 
+def reset_position():
+    global start_pos, end_pos, player_pos, clicked
+    player_pos = None
+    start_pos = None
+    end_pos = None
+    clicked = 0
 #hàm nút new game
 def new_game():
     global start_pos, end_pos, found_path, clicked, player_pos, visited_path
