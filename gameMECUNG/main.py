@@ -27,6 +27,7 @@ player_pos: None = None
 visited_path = []
 # found_path = []
 clicked = 0  # Đếm số lần click để phân biệt điểm bắt đầu và kết thúc
+game_won = False
 
 # Tạo khung vẽ
 canvas = tk.Canvas(window, width = maze_size * cell_size, height = maze_size * cell_size)
@@ -133,6 +134,7 @@ def find_path():
     reset_position()
     draw_maze()
 
+#Khi không tìm thấy đường đi sẽ reset lại điểm bắt đầu và kết thúc
 def reset_position():
     global start_pos, end_pos, player_pos, clicked
     player_pos = None
@@ -191,28 +193,33 @@ def animation_path(step=0):
 
 #Hàm di chuyển người chơi
 def move_player(dx, dy):
-    global player_pos
-    if player_pos:
+    global player_pos, game_won
+    if player_pos and not game_won:
         new_pos = (player_pos[0] + dx, player_pos[1] + dy)
         if 0 <= new_pos[0] < maze_size and 0 <= new_pos[1] < maze_size and maze[new_pos[0]][new_pos[1]] == 1:
             visited_path.append(player_pos)
             player_pos = new_pos
             draw_maze()
             if player_pos == end_pos:
+                game_won = True
                 messagebox.showinfo("Chúc mừng!", "Bạn đã đến đích!")
 
 #Hàm xử lý phím
 def key_event(event):
-    if event.keysym == "Up":
+    if event.keysym == "Up" or event.keysym == "W" or event.keysym == "w":
         move_player(-1, 0)
-    elif event.keysym == "Down":
+    elif event.keysym == "Down" or event.keysym == "S" or event.keysym == "s":
         move_player(1, 0)
-    elif event.keysym == "Left":
+    elif event.keysym == "Left" or event.keysym == "A" or event.keysym == "a":
         move_player(0, -1)
-    elif event.keysym == "Right":
+    elif event.keysym == "Right" or event.keysym == "D" or event.keysym == "d":
         move_player(0, 1)
     if event.state & 0x0004 and event.keysym == "f":
         find_path()
+
+#Thêm các nút di chuyển
+
+
 #Tạo button để chứa các nút
 button_frame = tk.Frame(window)
 button_frame.pack(side=tk.TOP)
@@ -230,6 +237,9 @@ new_game_buttoon.pack(side=tk.LEFT)
 #Hàm nút thoát
 exit_button = tk.Button(button_frame, text="Exit", command=exit)
 exit_button.pack(side=tk.LEFT)
+
+
+
 
 # Khởi tạo mê cung và vẽ nó
 generate_maze()
