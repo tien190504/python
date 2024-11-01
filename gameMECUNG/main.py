@@ -4,18 +4,19 @@ import random
 import tkinter.messagebox as messagebox
 
 
-
 # Khởi tạo cửa sổ game
 window = tk.Tk()
 window.geometry('758x755')
 window.title("DEMO MÊ CUNG")
+
 first_label = tk.Label(text="Demo game mê cung", font=("Arial", 20, "bold"))
 first_label.pack(side=tk.TOP)
 
 # Kích thước mê cung
 maze_size = 30
-cell_size = 20
 
+# Kích thước ô trong mê cung
+cell_size = 20
 
 # Khởi tạo mê cung với tất cả là tường
 maze = [[0 for _ in range(maze_size)] for _ in range(maze_size)]
@@ -24,8 +25,10 @@ direction = [(-1, 0), (1, 0), (0, 1), (0, -1)]
 start_pos: None = None
 end_pos: None = None
 player_pos: None = None
-visited_path = []
-# found_path = []
+visited_path = [] #tọa độ các điểm mà người chơi đã đi qua nghĩa là các điểm player_pos sẽ được lưu vào đây
+
+
+found_path = []
 clicked = 0  # Đếm số lần click để phân biệt điểm bắt đầu và kết thúc
 game_won = False
 
@@ -86,13 +89,21 @@ def generate_maze():
 # Hàm heuristic sử dụng khoảng cách Manhattan
 def heuristic1(a):
     return abs(a[0] - end_pos[0]) + abs(a[1] - end_pos[1])
-
+# Hàm tái tạo đường đi từ điểm bắt đầu đến điểm kết thúc
+def reconstruct_path(came_from, current):
+    global found_path
+    found_path = []
+    while current in came_from:
+        found_path.append(current)
+        current = came_from[current]
+    found_path.reverse()  # Đảo ngược để có đường đi từ bắt đầu đến kết thúc
+    
 
 
 # Hàm tìm đường đi trong mê cung vào nút find path
 def find_path():
-    global found_path, clicked, player_pos,start_pos, end_pos  # Đảm bảo sử dụng biến toàn cục
-    if not player_pos or not end_pos:
+    global found_path, clicked, player_pos,start_pos, end_pos
+    if not player_pos or not end_pos or not start_pos:
         messagebox.showinfo("Thông báo", "Hãy chọn điểm bắt đầu và điểm kết thúc")
         return
 
@@ -100,7 +111,7 @@ def find_path():
     heapq.heappush(open_set, (0, player_pos))  # Chi phí ước lượng, tọa độ
     came_from = {}  # Lưu trữ đường đi từ ô cha đến ô con
     g_score = {player_pos: 0}
-    f_score = {player_pos: heuristic1(start_pos)}  # Chi phí ước lượng từ điểm bắt đầu đến điểm kết thúc
+    f_score = {player_pos: heuristic1(player_pos)}  # Chi phí ước lượng từ điểm bắt đầu đến điểm kết thúc
 
     while open_set:
         current = heapq.heappop(open_set)[1]  # Lấy ô có chi phí thấp nhất
@@ -127,15 +138,7 @@ def find_path():
     reset_position()
     draw_maze()
 
-# Hàm tái tạo đường đi từ điểm bắt đầu đến điểm kết thúc
-def reconstruct_path(came_from, current):
-    global found_path
-    found_path = []
-    while current in came_from:
-        found_path.append(current)
-        current = came_from[current]
-    found_path.reverse()  # Đảo ngược để có đường đi từ bắt đầu đến kết thúc
-    
+
     
 #Nếu thuật toán không tìm thấy đường đi sẽ reset lại điểm bắt đầu và kết thúc
 def reset_position():
@@ -221,7 +224,7 @@ def key_event(event):
     if event.state & 0x0004 and event.keysym == "f":
         find_path()
 
-#Thêm các nút di chuyển
+
 
 
 #Tạo button để chứa các nút
@@ -238,12 +241,15 @@ find_button.pack(side=tk.LEFT)
 new_game_buttoon = tk.Button(button_frame, text="New Game", command=new_game)
 new_game_buttoon.pack(side=tk.LEFT)
 
-#Hàm nút thoát
-def exit_game():
-    if messagebox.askyesno("Xác nhận", "Bạn có chắc muốn thoát"):
+# Hàm xử lý sự kiện khi người dùng nhấn nút "X" để đóng cửa sổ
+def on_closing():
+    if messagebox.askyesno("Xác nhận", "Bạn có chắc muốn thoát?"):
         window.destroy()
 
-exit_button = tk.Button(button_frame, text="Exit", command=exit_game)
+# Gán sự kiện khi bấm nút "X"
+window.protocol("WM_DELETE_WINDOW", on_closing)
+
+exit_button = tk.Button(button_frame, text="Exit", command=on_closing)
 exit_button.pack(side=tk.LEFT)
 
 # Khởi tạo mê cung và vẽ nó
