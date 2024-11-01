@@ -87,14 +87,7 @@ def generate_maze():
 def heuristic1(a):
     return abs(a[0] - end_pos[0]) + abs(a[1] - end_pos[1])
 
-# Hàm tái tạo đường đi từ điểm bắt đầu đến điểm kết thúc
-def reconstruct_path(came_from, current):
-    global found_path
-    found_path = []
-    while current in came_from:
-        found_path.append(current)
-        current = came_from[current]
-    found_path.reverse()  # Đảo ngược để có đường đi từ bắt đầu đến kết thúc
+
 
 # Hàm tìm đường đi trong mê cung vào nút find path
 def find_path():
@@ -134,13 +127,24 @@ def find_path():
     reset_position()
     draw_maze()
 
-#Khi không tìm thấy đường đi sẽ reset lại điểm bắt đầu và kết thúc
+# Hàm tái tạo đường đi từ điểm bắt đầu đến điểm kết thúc
+def reconstruct_path(came_from, current):
+    global found_path
+    found_path = []
+    while current in came_from:
+        found_path.append(current)
+        current = came_from[current]
+    found_path.reverse()  # Đảo ngược để có đường đi từ bắt đầu đến kết thúc
+    
+    
+#Nếu thuật toán không tìm thấy đường đi sẽ reset lại điểm bắt đầu và kết thúc
 def reset_position():
     global start_pos, end_pos, player_pos, clicked
     player_pos = None
     start_pos = None
     end_pos = None
     clicked = 0
+    
 #hàm nút new game
 def new_game():
     global start_pos, end_pos, found_path, clicked, player_pos, visited_path
