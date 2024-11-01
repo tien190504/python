@@ -69,6 +69,12 @@ class MazeGame:
 
                 if (row, col) in self.visited_path:
                     self.canvas.create_rectangle(x1, y1, x2, y2, fill="LightGreen")
+        if self.player_pos:
+            x1 = self.player_pos[1] * self.cell_size
+            y1 = self.player_pos[0] * self.cell_size
+            x2 = x1 + self.cell_size
+            y2 = y1 + self.cell_size
+            self.canvas.create_oval(x1, y1, x2, y2, fill="Red")
 
     def generate_maze(self):
         
