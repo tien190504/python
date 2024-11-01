@@ -1,0 +1,66 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 561
+        length: 32
+        placeholder_text: "# TODO add an oval to the canvas"
+        initial_state:
+          length: 32
+          offset: 561
+        initialized_from_dependency: false
+        encrypted_possible_answer: chQwYgFaa8VzFfAQn+0GVRgVq4XEwKt8tqm8VS+OWB6yk4PHPognlSOrWK6OtYK5Zg8/UU8E2A1k14ZLOcVEqO/OBQ202+0xBsgNfQXKMKw=
+        selected: false
+        status: Unchecked
+      - offset: 674
+        length: 31
+        placeholder_text: "# TODO add a line to the canvas"
+        initial_state:
+          length: 31
+          offset: 674
+        initialized_from_dependency: false
+        encrypted_possible_answer: xOjbuX+RAd7AzTE4Nr95riChMHyhAS8rk6bWVTZ7tDikcGJUbrxNbjR7iqJjCjaS
+        selected: false
+        status: Unchecked
+      - offset: 782
+        length: 30
+        placeholder_text: "# TODO add a arc to the canvas"
+        initial_state:
+          length: 30
+          offset: 782
+        initialized_from_dependency: false
+        encrypted_possible_answer: fqR/TTnMqJsJdLKKZwCbmyGUKIhQ0lZ2wqJ+Bae6z49bsDVYwvIlyhELZ5fjsXYu
+        selected: false
+        status: Unchecked
+      - offset: 976
+        length: 29
+        placeholder_text: "# TODO add text to the canvas"
+        initial_state:
+          length: 29
+          offset: 976
+        initialized_from_dependency: false
+        encrypted_possible_answer: iJCpx0VQwrxzVExLmek0V3TBqm6XicKaOgC2t9QbAi/B8QmVj72steWG/3AP9WSN3WXy5kueTw08Ky0/GaF1CEF67Z8C3x0CzJp/ha5IYwY=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

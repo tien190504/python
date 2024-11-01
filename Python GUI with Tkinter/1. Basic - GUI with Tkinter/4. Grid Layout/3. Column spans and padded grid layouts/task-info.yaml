@@ -1,0 +1,40 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 698
+        length: 61
+        placeholder_text: "# TODO use the ipadx config option to make the buttons larger"
+        initial_state:
+          length: 61
+          offset: 698
+        initialized_from_dependency: false
+        encrypted_possible_answer: PoU6jzcqAmvBMFnNWaeLKwIJokwpnU0EuQp8rHeddKn0mQyfFlqFrWLvzRRg0WZsFxnBGWtOrAEYoKf+0wUw+JUszqGr+ktnL7sSXnWtvJihg9NwADIXoJFabvihd2Ya+etaauTKlqLbkzoV4WMiFINQ24WAAPns6hV+JE4s5N3Od5RleqOhcMTjZjKPBF72
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: expected_output_win.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: example.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

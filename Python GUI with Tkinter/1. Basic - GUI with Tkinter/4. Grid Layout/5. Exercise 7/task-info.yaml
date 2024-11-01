@@ -1,0 +1,88 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 94
+        length: 50
+        placeholder_text: "# TODO update the text config of the message_label"
+        initial_state:
+          length: 50
+          offset: 94
+        initialized_from_dependency: false
+        encrypted_possible_answer: llsmP+P9TKvomfuGx7OnxyyURp/IcF1VNXZ5XL3fhVI=
+        selected: false
+        status: Unchecked
+      - offset: 227
+        length: 49
+        placeholder_text: "# TODO get the value in the username_entry widget"
+        initial_state:
+          length: 49
+          offset: 227
+        initialized_from_dependency: false
+        encrypted_possible_answer: ABZVal/zq8Ef8ZCYhi0rGzH5Sg5HC+hoq2ilhG6SIo4=
+        selected: false
+        status: Unchecked
+      - offset: 679
+        length: 38
+        placeholder_text: "# TODO clear the password_entry widget"
+        initial_state:
+          length: 38
+          offset: 679
+        initialized_from_dependency: false
+        encrypted_possible_answer: lJivvdNGjeuiPYB6V+YN5K4+a+R3ViM1JAs3jODjHXnJzw6Psq1eV9wRLPBoQm88IVOi7tUzba1l5hNRgA7RLQHqwmsg++3lZ7gRTM7DWfM=
+        selected: false
+        status: Unchecked
+      - offset: 1221
+        length: 50
+        placeholder_text: "# TODO config the button to run the login function"
+        initial_state:
+          length: 50
+          offset: 1221
+        initialized_from_dependency: false
+        encrypted_possible_answer: U6B1zFFcgm0C8F5e0V0YAQ==
+        selected: false
+        status: Unchecked
+      - offset: 1325
+        length: 55
+        placeholder_text: "# TODO config the button to run the clear_form function"
+        initial_state:
+          length: 55
+          offset: 1325
+        initialized_from_dependency: false
+        encrypted_possible_answer: X3fSIXfC7znKW8QZOYStjw==
+        selected: false
+        status: Unchecked
+      - offset: 1434
+        length: 57
+        placeholder_text: "# TODO config the button to run the exit_program function"
+        initial_state:
+          length: 57
+          offset: 1434
+        initialized_from_dependency: false
+        encrypted_possible_answer: S44pGLy+oHGm/9mBTWsRig==
+        selected: false
+        status: Unchecked
+      - offset: 1642
+        length: 38
+        placeholder_text: "# TODO layout the widgets using a grid"
+        initial_state:
+          length: 38
+          offset: 1642
+        initialized_from_dependency: false
+        encrypted_possible_answer: b1rcIPwvxe8JOPKA7VLSz2aLXA0RixanDrmlkog7ngsgOKzddK0YawsuYsvm8LcSZfKTFb0uZ2ueUfp4MoPJ0+ts24pU0bCzREo56N+zI/n1J/1Yd/3vJ9wdV6l81uejZwplLxKY+SuNhbjV+BR+AaDqqYRdv8fuNiKGI+uGNpgyNs1lJRWcjwpGpJN5net1hS43UYGMQx4QQX6qfeJTsTrRuusHA3PN2/hVEHZUsVd3OCSVZq7wDPqhA8kFquPavhKH1qHY/OxcNdwwuIxEjqb8JLI1neO62IfBSBYmcn+dubcDw8hYorA1jlkPu5pYF2yXfGHQCVIG6ZomsypUOoloPAtuLbTkawXp6+ut1yvL+TNMhbdmlADiRNAWRdXi
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

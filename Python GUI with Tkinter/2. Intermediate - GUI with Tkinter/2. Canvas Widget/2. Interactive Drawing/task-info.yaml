@@ -1,0 +1,59 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 537
+        length: 42
+        placeholder_text: "# TODO create a oval at the mouse position"
+        initial_state:
+          length: 42
+          offset: 537
+        initialized_from_dependency: false
+        encrypted_possible_answer: chQwYgFaa8VzFfAQn+0GVRgVq4XEwKt8tqm8VS+OWB6yk4PHPognlSOrWK6OtYK5OQsLgHRUCvAq7w0O8l6dpavJEDE+owvtWTHmPTxF4sg=
+        selected: false
+        status: Unchecked
+      - offset: 720
+        length: 31
+        placeholder_text: "# TODO create the canvas widget"
+        initial_state:
+          length: 31
+          offset: 720
+        initialized_from_dependency: false
+        encrypted_possible_answer: mgBTLgsdrcovpbNIDWlKvA==
+        selected: false
+        status: Unchecked
+      - offset: 813
+        length: 44
+        placeholder_text: "# TODO place the canvas widhet on the window"
+        initial_state:
+          length: 44
+          offset: 813
+        initialized_from_dependency: false
+        encrypted_possible_answer: qptQzhP8BBNmTJssZHEhIEa/hTBqbgkTRZqTOOaAh4IpmmQ4eUTyfdWqbB6mP1/R
+        selected: false
+        status: Unchecked
+      - offset: 893
+        length: 117
+        placeholder_text: "# TODO bind the input event for pressing the left mouse button\
+      \ while moving the mouse to the draw_with_brush function"
+        initial_state:
+          length: 117
+          offset: 893
+        initialized_from_dependency: false
+        encrypted_possible_answer: LgEOt65jPwa2NJRqIzlxeyVWStuS64lKRkskwzPo3NU2UmV3CLh49xizLRLHBFyI
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

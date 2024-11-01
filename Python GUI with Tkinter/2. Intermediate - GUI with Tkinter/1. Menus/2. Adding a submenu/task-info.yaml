@@ -1,0 +1,48 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 296
+        length: 55
+        placeholder_text: "# TODO finish the declaration of the save_menu submenu."
+        initial_state:
+          length: 55
+          offset: 296
+        initialized_from_dependency: false
+        encrypted_possible_answer: CmEA59yyPLRRmnqQ8vSgiA==
+        selected: false
+        status: Unchecked
+      - offset: 725
+        length: 47
+        placeholder_text: "# TODO add a\"Save...\"  command to the save_menu"
+        initial_state:
+          length: 47
+          offset: 725
+        initialized_from_dependency: false
+        encrypted_possible_answer: pH19kNHDAVdpzyZ2CUJjo+VXeIokNGtdJYQiWWKmcYUs6pCDrJzvepjCmjueSMke
+        selected: false
+        status: Unchecked
+      - offset: 773
+        length: 58
+        placeholder_text: "# TODO add a \"Save as...\" command to the save_menu submenu"
+        initial_state:
+          length: 58
+          offset: 773
+        initialized_from_dependency: false
+        encrypted_possible_answer: pH19kNHDAVdpzyZ2CUJjo+VXeIokNGtdJYQiWWKmcYW+kStgZCCENTwFP+xFqGKr
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

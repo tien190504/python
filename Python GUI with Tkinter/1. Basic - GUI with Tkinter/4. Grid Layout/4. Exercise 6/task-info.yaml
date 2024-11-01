@@ -1,0 +1,46 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 142
+        length: 36
+        placeholder_text: "# TODO create 2 labels and 4 buttons"
+        initial_state:
+          length: 36
+          offset: 142
+        initialized_from_dependency: false
+        encrypted_possible_answer: XK2wmtunHS9Qm/F79rTlu9gLceGr4Aj45tkCNSgpFkkr4/c9SmdenS60YDUE8TBt5O32rwPHyhqXP05D7NbRxikge7IvC8mauTHtJ/e1u7ADJV4bhwi5lKX9JqWpOLy7yJj98c/wkTcjdV+CsfkqwpLzxiMVKLFCK4bSwjx4bmKmKxs8Wzwnn6QXgBqaRXZ/djLXFdpxTza+aC2983fBXbPNNlYuld7CD+W71v7hfWKILmI260gPpciyQlkTamsT6I9/vxWd59AUSpJIrB4XUo9CYqvlb6ixwTsiF2AgLiQktif9K0kdHMYakyqGBPKjCI5yfvgCDAQszfAtHK5OAw==
+        selected: false
+        status: Unchecked
+      - offset: 240
+        length: 48
+        placeholder_text: "# TODO use a grid layout to position the widgets"
+        initial_state:
+          length: 48
+          offset: 240
+        initialized_from_dependency: false
+        encrypted_possible_answer: 03IMtp4EOHTheE2zQPBASGip8X0Nu9Ll71Dpalzfge3GEUp1yPYigSotgiD+fLqxJG4AlHWaWFcf1tIWGURKvmUKTPb32auXyXlPn06PMpwDIpwbJv1HhdSuFEZcEBVsIT+ik1rmgEWe45MAF7RRbF/tyROGYCfaXafxu2p1fXZZN+iQ1e8+MtXuVpZUEZ6AOcfqwEZT6LhY6pPYHpuzPEE5jQydxk8MDxpwqref+QRih157WyKRbzHZoj08vWF/NUdNYmJ2BSEwN33rHtAz6YueZQvms2r9B8P7wneGY6I=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: expected_output.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

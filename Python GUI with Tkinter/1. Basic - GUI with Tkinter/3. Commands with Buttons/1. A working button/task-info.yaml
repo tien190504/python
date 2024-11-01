@@ -1,0 +1,46 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 79
+        length: 40
+        placeholder_text: "# TODO choose an name for your function."
+        initial_state:
+          length: 40
+          offset: 79
+        initialized_from_dependency: false
+        encrypted_possible_answer: W5C9rT41590UXxzhPONLCw==
+        selected: false
+        status: Unchecked
+      - offset: 253
+        length: 39
+        placeholder_text: "# TODO add the code to create a button."
+        initial_state:
+          length: 39
+          offset: 253
+        initialized_from_dependency: false
+        encrypted_possible_answer: PwXphS46cYbMgv6cCTKJCtV3Wi9qNhgTH914b7obNTxjr2v9GeAAGxsGyqWwU/xDKslFrYlnPCv0ztf+PeVQyw==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

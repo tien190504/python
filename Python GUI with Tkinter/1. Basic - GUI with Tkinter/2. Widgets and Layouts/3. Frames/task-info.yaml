@@ -1,0 +1,66 @@
+type: theory
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 434
+        length: 61
+        placeholder_text: "# TODO create the final button, adding it to the bottom_frame"
+        initial_state:
+          length: 61
+          offset: 434
+        initialized_from_dependency: false
+        encrypted_possible_answer: MsdiGE9b7rvSwGDM/pXJ1BGKBRwwk6+iOigF4oB4gHvt6pTWIvqBYFLziRHcj/kjYB/4r85Y8gBVjf2NDhlubw==
+        selected: false
+        status: Unchecked
+      - offset: 577
+        length: 54
+        placeholder_text: "# TODO pack the button onto the LEFT side of the frame"
+        initial_state:
+          length: 54
+          offset: 577
+        initialized_from_dependency: false
+        encrypted_possible_answer: ya6/KlPC4Jov9HeimYNSjIOYIx94G5Fi31pK1HQVJIw=
+        selected: false
+        status: Unchecked
+      - offset: 639
+        length: 54
+        placeholder_text: "# TODO pack the button onto the LEFT side of the frame"
+        initial_state:
+          length: 54
+          offset: 639
+        initialized_from_dependency: false
+        encrypted_possible_answer: ya6/KlPC4Jov9HeimYNSjIOYIx94G5Fi31pK1HQVJIw=
+        selected: false
+        status: Unchecked
+      - offset: 701
+        length: 54
+        placeholder_text: "# TODO pack the button onto the LEFT side of the frame"
+        initial_state:
+          length: 54
+          offset: 701
+        initialized_from_dependency: false
+        encrypted_possible_answer: ya6/KlPC4Jov9HeimYNSjIOYIx94G5Fi31pK1HQVJIw=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

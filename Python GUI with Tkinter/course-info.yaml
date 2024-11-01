@@ -1,0 +1,19 @@
+type: marketplace
+title: Python GUI with Tkinter
+language: English
+summary: "This course offers learning materials for students interested in developing\
+  \ cross-platform desktop applications with Python’s built-in Tkinter module. The\
+  \ course includes two sections going from basic to intermediate, each with a range\
+  \ of examples and exercises on building apps with buttons, data entry widgets, and\
+  \ menus. These exercises guide you through the development of a strategy game with\
+  \ a computer opponent (that doesn’t cheat!) and a simple drawing app. Examples and\
+  \ exercises include using layouts, frames, buttons, data entry, binding, menus (submenus\
+  \ and popup), canvas (and canvas shapes), scale, spinbox, radio button, check and\
+  \ message box."
+programming_language: Python
+environment: unittest
+content:
+  - 1. Basic - GUI with Tkinter
+  - 2. Intermediate - GUI with Tkinter
+mode: Study
+feedback_link: https://plugins.jetbrains.com/plugin/18395-python-gui-with-tkinter/reviews

@@ -1,0 +1,46 @@
+type: theory
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 276
+        length: 43
+        placeholder_text: "# TODO Create and frame your 4 buttons here"
+        initial_state:
+          length: 43
+          offset: 276
+        initialized_from_dependency: false
+        encrypted_possible_answer: YNPLm2QUJTtHXMNC94Bj2969bpbzI3eT/LOTO8wzVpk5KEqB+06ZWcVSnNng2+DP2MeldKoohK6Z/lleYmIb/V933nGOtwckNsBZPhFLKGpJ6eO44U4kUQeKneYLl93bD6DOw36zjUweAeVP1L+oVT+a3GGey/w8kRj1iy5F/9Szf+6/oG/cpTFm/rwLf9bhR9NBC6Jt/8H9k45YM/wQmXrJVNbLlCnU7x5fXn3A13/PRVrwBbGhu3AvFPIsZe1ml4m5RVMmU04tpb79OjY0G2NK+AMMmfYO3S77knXVmRPtM9Jjp1J0b78302Y21cf2
+        selected: false
+        status: Unchecked
+      - offset: 451
+        length: 42
+        placeholder_text: "# TODO Pack your 4 buttons into the window"
+        initial_state:
+          length: 42
+          offset: 451
+        initialized_from_dependency: false
+        encrypted_possible_answer: TnJDRq/JS4pmJsOmsIR5F82QrgPLneFhUoWS4mSmUTZ84EkCQDypHiwKKoeJOniLgxQDTcCEVUU2mtAVoZn6pcv8ESdh1kolnqQi4f5mkaNHTVML15BFDGVTOJ4XUO03
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

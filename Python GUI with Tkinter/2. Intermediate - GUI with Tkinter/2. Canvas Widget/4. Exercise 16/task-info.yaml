@@ -1,0 +1,59 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 245
+        length: 40
+        placeholder_text: "# TODO get the x position from the event"
+        initial_state:
+          length: 40
+          offset: 245
+        initialized_from_dependency: false
+        encrypted_possible_answer: nCuqdp17N9HaoiBm4aWfuWM/4IYhlHFNlxzePI0UWhI=
+        selected: false
+        status: Unchecked
+      - offset: 290
+        length: 40
+        placeholder_text: "# TODO get the y position from the event"
+        initial_state:
+          length: 40
+          offset: 290
+        initialized_from_dependency: false
+        encrypted_possible_answer: NSC2qiVvJkdMTDy2hBT0s9nin/AhzWqEK4+s4WlPGsQ=
+        selected: false
+        status: Unchecked
+      - offset: 396
+        length: 59
+        placeholder_text: "# TODO draw a rectangle with the mouse click at it's center"
+        initial_state:
+          length: 59
+          offset: 396
+        initialized_from_dependency: false
+        encrypted_possible_answer: fEnb8BL+SYKi8vF7fyDn7BLYhT7Z/xext+sfFRX7fBJz4O3fm2PrEgp3IKR4HLO8uo7P9iZ8sL85ys/7MYD8PW7YWMig3k4ifmWW/ctUktc/gMIt3012GrtOnIOt7IHtRDf88M1BKSzvEkA85tqMQ0FBYQLDXg70/Ot2UeWC9ryqgqES/pLQzW7ff/tTXYkqidOSdoortlu16qTVJ81mwLMLIZ8dSSlSJ+jp6WWIxQtcteE+nrxz6ZTz/Tn+cQXyxR/hcHy62gPRvkozNO/Z93d3cRSp6kmuJX4fg6LeBm2PN58mcUxNE8gRx+LHpeG26LahtWsJF/4d9P02cCsGN1R8XnCX8ziAtJObcKDSShmyxneggpQh33uTuXFp4QJWp4NOqnFOezGtN51mdkna8pXPa3WWvUjoVLxD8Fuu1f+j01OG2oW8QqcFFScLBzc1BjS6Z4kQDFYP1cjShJ3iO10mux0tCD1aEH08Mr979lcrFx7OFvsGJNXxYDwzfNKu
+        selected: false
+        status: Unchecked
+      - offset: 714
+        length: 102
+        placeholder_text: "# TODO bind the draw_rectangle function to the input event\
+      \ for mouse button 1 pressed and mouse moving"
+        initial_state:
+          length: 102
+          offset: 714
+        initialized_from_dependency: false
+        encrypted_possible_answer: LgEOt65jPwa2NJRqIzlxeyVWStuS64lKRkskwzPo3NVsttV4AObKfD3OtM3eS1H9
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

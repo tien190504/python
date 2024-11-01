@@ -1,0 +1,59 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 552
+        length: 29
+        placeholder_text: "# TODO finish the declaration"
+        initial_state:
+          length: 29
+          offset: 552
+        initialized_from_dependency: false
+        encrypted_possible_answer: l3N3aXzagQvX7lhKgsaBAQ==
+        selected: false
+        status: Unchecked
+      - offset: 1117
+        length: 52
+        placeholder_text: "# TODO add a command called \"Copy\" to the popup_menu"
+        initial_state:
+          length: 52
+          offset: 1117
+        initialized_from_dependency: false
+        encrypted_possible_answer: h6QV65HWFtUeQgC8I1SNIfD5bOcFSDbN1MKI2McEeFj6lLBEpyukd7wfmWTLvnjV
+        selected: false
+        status: Unchecked
+      - offset: 1181
+        length: 53
+        placeholder_text: "# TODO add a command called \"Paste\" to the popup_menu"
+        initial_state:
+          length: 53
+          offset: 1181
+        initialized_from_dependency: false
+        encrypted_possible_answer: K1IznBiWPMQ3ubhQRTWbr7FgAi0HwSLEHY0HeXCIXms=
+        selected: false
+        status: Unchecked
+      - offset: 1277
+        length: 95
+        placeholder_text: "# TODO bind the windows input event for the right mouse button\
+      \ to the function popup_menu_event"
+        initial_state:
+          length: 95
+          offset: 1277
+        initialized_from_dependency: false
+        encrypted_possible_answer: mBC36rs/32KiEQ87KdMvz9Qy8fBhu5zU/AvEDrkYtITkOaQyeECpmgSzdb1UIjWz
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,49 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 64
+        length: 106
+        placeholder_text: "# TODO define your 17 new functions. Each one must print out\
+      \ the name of the menu command it is binded to."
+        initial_state:
+          length: 106
+          offset: 64
+        initialized_from_dependency: false
+        encrypted_possible_answer: hEvvt03sJrRBdiyKB8Dbd1f3n/7zvxnDm6GFa0rBklQyK0ERDbU0TyrmbYxFSSgirpL0nGW0pEIId+uyEKaa9F1TOzEM5lW3+2Cy7NQpgMfivOyYJRkCrotPz6gIQk+4N1F1IVnFn9ZkIcvocIURmADn9gNR7DxONNZnfsEbHdy0sehYxsUaJK+pTZClce6oST2zX+kjq47GLDtMk98USAc6KXowQGp4MoJk6PBm4wpuuztWeoDUvlPEPjsKw3S8uI73qGkJ3n7GVFVCI2Rx+4ER6fpyeZH0ypVASLbnoO7uz8VuBIYRnuyLKTReXNVm9yKN1litvAVUxydLV5RsqHl1z1AqSQ2n6YWRa/Rtnju/Rdvqnmp6WgftpRi0TzZdX0ZeitOF4wn4S9td7QhzPl01qccQV/XVfvdA1E8mqW8V2md21juWOsX/40Gc2b9tSxL4NpL4b1Tacf26HFH62Iu1trULizFtxofyM1GLOsLsqL12d5Nwa/py9LdYa4maNXho/lek4HMGGij+WR03ojGrh2HYCmAitw4vHsuvfMoLMT3Xc5cVopQDN9w8Kis9al5H9BQI3zMW0ILjl/SKaTf54rMPhmIVAORAVa+EeYPDw3GPiOPo3qnelOZDECy1SplTpUHTlHCcNuJJxULVf/yKNfkti48/ohMBTjR5waEAJJij8OKnyO8egS0pd9n9
+        selected: false
+        status: Unchecked
+      - offset: 630
+        length: 26
+        placeholder_text: "# TODO create your widgets"
+        initial_state:
+          length: 26
+          offset: 630
+        initialized_from_dependency: false
+        encrypted_possible_answer: OJSLemA7h9s8uqIno4RUFM+vvfNtq4hkuIJVfPW9gHXp8R60a6h9Zd7HSta2W643emmUIYX1mQqjTSllLAC3+EMK62gU1/931O3owaQE/OFjDuN+emH5AyakJVrqj3ebueYJL2iyYq5PM4J71m1G3OHW0QfrQnKCzrixhwqUjPlzzRxbuSWOBbhGAOWkU36a
+        selected: false
+        status: Unchecked
+      - offset: 678
+        length: 27
+        placeholder_text: "# TODO configure your menus"
+        initial_state:
+          length: 27
+          offset: 678
+        initialized_from_dependency: false
+        encrypted_possible_answer: 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
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

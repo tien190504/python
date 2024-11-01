@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 485
+        length: 72
+        placeholder_text: "# TODO bind to the windows input event for the right and left\
+      \ arrow keys"
+        initial_state:
+          length: 72
+          offset: 485
+        initialized_from_dependency: false
+        encrypted_possible_answer: fhMT34K4l5JqiDAqGf9wfdmPaqj//1GtQ2W4gjmlIMR7kQXYKNZmceVdqzZfXuRWnA5adjW2bnCg4GebWPUrzwaG4+hz3EgDVD9VDf9pwWxnk6ZfbRBMIN9EBCGIx+el
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,36 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 597
+        length: 56
+        placeholder_text: "# TODO place the remaining widgets using the grid layout"
+        initial_state:
+          length: 56
+          offset: 597
+        initialized_from_dependency: false
+        encrypted_possible_answer: b1rcIPwvxe8JOPKA7VLSz2aLXA0RixanDrmlkog7ngsgOKzddK0YawsuYsvm8LcSZfKTFb0uZ2ueUfp4MoPJ09ecz9JaVWC1HR2BYRyrKYqM01ITlOjkdYwwEllX3shORlAqmdNgDBh9ik2fZ9NKc4va6QUR+DjqnZ2aOIEcgylU6Tk/uAMQjCBAq2etusAjnIylbF0BRWp9FVSjxrla0E+sbZ9JSTDstBOWd5aB+WxRu66X5QDAZRdjy6sTAjsm
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

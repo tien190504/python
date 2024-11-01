@@ -1,0 +1,126 @@
+type: theory
+files:
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 97
+        length: 30
+        placeholder_text: "# TODO define global variables"
+        initial_state:
+          length: 30
+          offset: 97
+        initialized_from_dependency: false
+        encrypted_possible_answer: u9htqp9PaNY7l+Rhg3xWvfPQFEhIrpXCCJb3LiKaLBm38JIGB50CZAh47jB45755J0fWhy198xeXaYUTPLrshw==
+        selected: false
+        status: Unchecked
+      - offset: 152
+        length: 27
+        placeholder_text: "# TODO define all functions"
+        initial_state:
+          length: 27
+          offset: 152
+        initialized_from_dependency: false
+        encrypted_possible_answer: ynyAmE2MxqAxorJsbbt973KEcTYhcDx4GluyyXSAF8SOs9J/pGDGAY3RYE8IKo3z0DM8TuvQMKgyC4rr4yX1loLkSLThdfW1vk+y4PRGaZzIrhYjRsGjH0o5HnBFeri3j1P6Mhkuvj61g5RDhU00T07zdYyTRSNjjYwqC++rwKbpCFtHlZBVXTTHDc+iTbLSFniMs2YR1ZlUFq/BglgmwfFTwDRB4kQe2J2pz6Tqgo9Px6+5nN3/V9t+w/HmNW3z0UAdNqZMbozKK8Fh3El9dKBFrd+FvDj27ldHCXbDT9joihIad8ZlLkSley1ezSYJY1KKIFmd0FC3ptSeQVu9bjMe+6g2Ut5ApoLs5Zm5xdR2Q87/EwoL3p0Y8N152h0VR1tKvDUk1tJgkhKkDfZJzyQ9Gxlo5qbZ9OLoTvbcrruHsMBOb0ZEKb+9sEf/ZXCKzh+HOgy0PEBzQQYa6wZ0ru+8iNOZ5STh2SC2RSjZMTqmk7tE9r8FyOhI5jP2IfPrc5KVDhlDs0vU7jQ/0nR5rEIXA6dxKDp5SAOOODxgsGTvr0CGQ+aROanvIpAOc4bkLaS5mwnF3BjzdQ8AsY4xfZVGNbv9GKANLjSnBU25ylbexCfQdj8dXqTqWamLDRY4ppS/dviO7/dHcGUvwMj+/RyYka11G4ziMisdDN1H6WKDQqT3ueKfBLS7WPjxMJCcFQ0i95h2BHHN9yEzgXkVvX8ChhM6KINXr+Ycd13/zH+nscHyhMc6Lx1XNgokUa7TWQvUgxMb6Ry/ARID4UPSxbEJc//2xwNkcJeWW2lc+z97SIrICCTTJkVr4dktyi3QVzpjyC+zE8gsmIGc2DgktjJy7w2bYz8fzvAzArY2nQRzEOt8uN+59rrFj43ToFM+lP/uNo88Po2KoHYAzuLyCKEgiF9LX3A9y0O7BbPY4EJtE/IbWKzwAMyhO295vqjcv4X804eJ8gpRxJqS5l0oHlPzf9KJ7c2p22lp9zIaiS0cbjMivKHuYFTCgT9/jQ2FFuRVRmHjk/WxOeerTCpSiQJP0rUP8h6Obezv44xTW1kwoPZl0i0AmlQDv2WiDsA+zOD18EnHH4bJGnqPf54XOapSQS2WRF9WVO1sBGzQGMjAmh1iUlsWpQmZ93uUJ8hJSF3OfPfi0G5ILc1I1+lzl5RoafyGzq9rvsJuOUC2C5PTsKMcWu/2BsvNNDFqLBZFa51LLRbrQb44HIXHotHn+VOCHfXnFrygRLUIFCms19M8NPHS2FzkKFSSc2uAhD3T0FthESo1aQVeIxdo+kDUtA==
+        selected: false
+        status: Unchecked
+      - offset: 197
+        length: 24
+        placeholder_text: "# TODO create the window"
+        initial_state:
+          length: 24
+          offset: 197
+        initialized_from_dependency: false
+        encrypted_possible_answer: nWB0qRY6chi/3OHlGJOzpHdVQhSEAkBKg/AC2ctuSmAXWaXCKtwHiTcITouFK0JmW1ReCqCdCj/WNRkkXfCY1J2tyxGv1lbQOgaTcRoVaioSvr0C5vDUcver+OJZDdoB2ph84VmYRFliGG00h5mUFzILDcn4nYG3AaSJYdg3vA8=
+        selected: false
+        status: Unchecked
+      - offset: 300
+        length: 46
+        placeholder_text: "# TODO create all the global tkinter variables"
+        initial_state:
+          length: 46
+          offset: 300
+        initialized_from_dependency: false
+        encrypted_possible_answer: mPjU37qBvGEYMMzHkbsab3v6nxbk//ITNJdbPAeY/LkekZTG7S6DrGGSR5K+qDf9iRzWcYTxPQ+mvWyP7pq5MaeNyJ3l/gFfoOBLvANLT5vslQGc0qthzKmNFGNz2hgI/Guu8leycJXbxoGi/p2wCQEAtpzeYM9LxebNyS5yHxF4RF++bmVt7nO9KqpVrNOZu1WVqCJZP4/tTFlIbV91idf2ijoiS/VrM2quMvu0xP1gPMAZF4/8XIsdqR2LrBIV
+        selected: false
+        status: Unchecked
+      - offset: 388
+        length: 49
+        placeholder_text: "# TODO create and layout the radio button widgets"
+        initial_state:
+          length: 49
+          offset: 388
+        initialized_from_dependency: false
+        encrypted_possible_answer: csjo4KwoeJ3n4Hyv73u7DlBTXQwfzztormh6GJlE4U4BqaDK5+Hchq+HpVmaUJfErIwhkIhKVANA+XAzy+SIcj/uQsLWbUR0naNc3hJzNhaZw03voA7ofAggMcrRznRxYhljjrYjyyuV8SxgApZ78AAwOvy4CmmfWJQ3VJ2DV0qPoqVAmsMOMUvM4o9xOzNos6p8ccxWlcqrq3oJrmOzSXwjj5S5BrctM4Fd4361A1xN8lIHyU2hf7iXq89dthKweL8j1pOPYJNT6G9PVfRIhZASIwXFYUre25dPUQG3mro9UjrRqnJ7K/D2yyvsw7O8NzDgaV97UrhNF8rPRrYXjxxOhMrt87NwI3egTu2sbWXSlCm3rmktd+OVwPSFldSq
+        selected: false
+        status: Unchecked
+      - offset: 462
+        length: 27
+        placeholder_text: "# TODO create canvas widget"
+        initial_state:
+          length: 27
+          offset: 462
+        initialized_from_dependency: false
+        encrypted_possible_answer: C2KHd5xSfYd1WCdtxQFntDr3szdUZoWgpC5VbtH1ondJrjBPUkzk/sIe+D9Y9Dep
+        selected: false
+        status: Unchecked
+      - offset: 530
+        length: 43
+        placeholder_text: "# TODO create other submission form widgets"
+        initial_state:
+          length: 43
+          offset: 530
+        initialized_from_dependency: false
+        encrypted_possible_answer: p+2uX15etsali9meQjZ5PbpoZnC5Qeu6LE2K0kqE7czl1275U7QzQOwy76rPCQPZUt4VjtJdSHTtuX3IsE7qAsCR46SWp23cpc7IVisjU0Ijr8rgLvqAd2wHCYwjoP3cxxT3wjo7IrhTzDQtvOi6hs3ORfJHrZUy6nb269FOTZzbjMCRQvpbDsculaHmwsuIduEU3o65K2nNIltlugHCHe3Bg5L/d9LxJ219Gkfv5Rqxfcqk7dNkithdMNmoyMa1hOGzD2WYv0sfqxF7x/KkHCLGHYqHbQ9BuX7DjZHFmOugQUcOv8SfcVtO8MzyHmKqeHvVO5P9Oh3pJAe44zqk1/k6ysiiNfuViKqIvb2H9Cq79h9idDUVxBHwWFiL7NF0bjsRTaFLVLHJ0JmGBiVCc+0y+N8MdZsdRg/TrnClDnmRgZ3KpBUhtOtCJawOA3p6Z2Tx8A+0gh1OihRc99TW6QcHQQ7O+cEF6vk9ij+oUNzqZgjZoApzafRZa5imB2aNCGah9kfsJ1Vphp76qz2hTYIz7YBfDRvsPpNELL3JsoxymPUn9oCoRD5yDaarfvJmf85ov7w8WmODepsbszsirUUiRTzSSdi7Td3YHBQykJgyFtrjubg+f8SiU/n4bsuM3Hlc4SBZtmQI+oLFjgGI03uevhXoboY4cmpBSHS8IigKG+yDcW4GdGzh4Nhuoov2ggFKJd2qeAa+JMUwwKbDiA0P1TcR8Mo0TBp6QIcg+2VeZZ723P0N57mbGT9F+9HPFXJdPEsiPfXqg0jHDn/218cQF/T3dkgdCbUTGg8De/81w8+Smi0YqYbAB8DZYM5DUG5s8MBPEeQrDtLR7j0W0GNE+pApU8eW9Pn90491CUzq+16XcNwFp8O4Sgwn3LCpsMhcf0Av7Wyl9XywKtHehIZi27NKtIH4euD3L68lBvSKKqgsSVOHKJs/W1hWyDWG8gUGMIOxQL155N1nuwJ/ex9ery39LSKEAUYezebtBCHY2zIScD1wSgrqmjaQZZWs9qIrsOfKP/nR+pJTvqcW2vo6tQIpMzP4TkXldKR2TbwvDe79z54+ZC9XeNHuHJFK
+        selected: false
+        status: Unchecked
+      - offset: 941
+        length: 21
+        placeholder_text: "# TODO layout widgets"
+        initial_state:
+          length: 21
+          offset: 941
+        initialized_from_dependency: false
+        encrypted_possible_answer: p+2uX15etsali9meQjZ5PSG/IOAnr0iAPq8fUu9+UXQ9ErOrJopKQMU2r+GvTyMtJhAltyFtxmF9NXxWqgVngr5cn+dVepQvIHhg/9zdZv8u6FPzd2ZTUgL5MV4I+5utvgEmjh+ZTiyLpXQCFxdRZbFBBTUrPfK9B4PHfD9SeE8+Pp0XYqh3p1/XiWV3b5FXfVcf9mEcVxpoBPYrtA9OQapF/TjUP4ltGhMmo074cQQZi9eiD/ktdA8PLQVpwb+IesGLY7saQ6XeCTbBbB3RyIWF+bne9bg0aKkoBXyt3w1sT7puxwtN2WEhZeTgfCdrXHbNJyvZUdULsvQTkJh8YM4X3cFK4JzvIqXzqceIF1ghKqNTFyUA+G9+GHPJ04jf6mq3E9pLRKl57S2PXkbM0t0/ZOsh0n5Rwk1nOw3KtTxtgWIsgwmgHYPojw0GtiMMNPKSM3bnTWa7QJvxIjl/5Udx3tmdNdmz95lfolkh9O+R0Gvuydnj0PGCkBqDpKlSxZZ+BUwLhQM4dhjXo/e7odiVQFxbJE9A1rZHGlWOZu41Cy7QlbfocHZ4KJNmwhNr0wAc8nsdmnh1I4QahzTmvvqqci8lHnQTLuBCcAEk67WOBV4lYl2p35wzExJUQoKdkmYhSLbI/cW6SkyhciGlYV9XJo4aRprKKg5vBB5YQaqYGzhXgsGukpErXbxqh/4TZvn49e5MoYTqkWFGGwu5eL1o3OM5h9ulZ26+meFJ/y9//PeXqgfUWbeYSVRk5yOihh1Zdsm3Oftp3yj4DrQCkrgy8lCyzd+IDNo1tG0Vm9BKsTqw79IxJjcYnhDePKfZsvoauReeBNHtBnk3cPK1JED+QGnZ1POZ3O+NbiDD55pymPfN+6P/IMThLB81qP9qSHqPu6A5LC5ejs1pCdL4g5RHWrYSm04c65uyWxO2w5NohOmLj7nGXVOk9UQpT0qS4AAk44Mb/QbN5bPfhYY7KfNkXplMuyVgT8uM67SL3rCg0sQ3fUN5WF0zdoEfGwcM5M8O0fm/EoUThAYDhtlagaG9yuWXk0ztySCF0bzNEj0+Xsw3Yi+3KH+XDrCO76SA9OflsY7XwOn+EJ9KFu2kz7oYOCy+4wuA81+Eb4hJG3Tw5vSvyPvhNN13YOm+5POZs5FBDQwib4kyR+QvFhE6Z6bB0QIvIiJUps0LJmBU91HsCLXwu9RkEn2l7t0d/yaI1vR6AOnAQ9XGrYxtj1dI9xxKvToweXQBbvwX87Sw6uALMIAjOE6mnM1WzoQC62pW1fCq2CQdGNo5aSe7o5AfPMaVkOquNBuDUNSdC8ulaj6D8MrDKdRK4Qsj/Id2vgrfcQfIOhkFit3HjKaDapXuYg==
+        selected: false
+        status: Unchecked
+      - offset: 998
+        length: 37
+        placeholder_text: "# TODO bind input events to functions"
+        initial_state:
+          length: 37
+          offset: 998
+        initialized_from_dependency: false
+        encrypted_possible_answer: LgEOt65jPwa2NJRqIzlxeyVWStuS64lKRkskwzPo3NU2UmV3CLh49xizLRLHBFyI
+        selected: false
+        status: Unchecked
+      - offset: 1051
+        length: 22
+        placeholder_text: "# TODO open the window"
+        initial_state:
+          length: 22
+          offset: 1051
+        initialized_from_dependency: false
+        encrypted_possible_answer: QXTyMBAT1dcuMnTxFH4Zw+hf6pBwZwXXR6nPJ4UGOag=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

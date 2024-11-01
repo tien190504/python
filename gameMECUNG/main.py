@@ -15,7 +15,7 @@ first_label.pack(side=tk.TOP)
 # Kích thước mê cung
 maze_size = 30
 cell_size = 20
-wall_margin = 4 #kích thước của tương
+
 
 # Khởi tạo mê cung với tất cả là tường
 maze = [[0 for _ in range(maze_size)] for _ in range(maze_size)]
@@ -235,11 +235,12 @@ new_game_buttoon = tk.Button(button_frame, text="New Game", command=new_game)
 new_game_buttoon.pack(side=tk.LEFT)
 
 #Hàm nút thoát
-exit_button = tk.Button(button_frame, text="Exit", command=exit)
+def exit_game():
+    if messagebox.askyesno("Xác nhận", "Bạn có chắc muốn thoát"):
+        window.destroy()
+
+exit_button = tk.Button(button_frame, text="Exit", command=exit_game)
 exit_button.pack(side=tk.LEFT)
-
-
-
 
 # Khởi tạo mê cung và vẽ nó
 generate_maze()

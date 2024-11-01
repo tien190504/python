@@ -1,0 +1,28 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 98
+        length: 50
+        placeholder_text: "# TODO update the button config when it is clicked"
+        initial_state:
+          length: 50
+          offset: 98
+        initialized_from_dependency: false
+        encrypted_possible_answer: qymWGg9cfZWHoHKULWJJQXwpADdfsOXP3kOXaEyh4tvf16Cl7tYNb1qV/BwZW5sk
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

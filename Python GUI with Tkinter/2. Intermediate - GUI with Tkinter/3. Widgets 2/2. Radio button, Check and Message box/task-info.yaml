@@ -1,0 +1,70 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 59
+        length: 24
+        placeholder_text: "# TODO import messagebox"
+        initial_state:
+          length: 24
+          offset: 59
+        initialized_from_dependency: false
+        encrypted_possible_answer: 2O1smSaeUTZxtTQpWy4ApA==
+        selected: false
+        status: Unchecked
+      - offset: 1392
+        length: 73
+        placeholder_text: "# TODO create button1 with the command option runing the confirm\
+      \ function"
+        initial_state:
+          length: 73
+          offset: 1392
+        initialized_from_dependency: false
+        encrypted_possible_answer: PwXphS46cYbMgv6cCTKJCmMkuOxVdX8tRgX7ewWixGuF9wZi42ZFyFeHjXI0tPR/
+        selected: false
+        status: Unchecked
+      - offset: 1693
+        length: 78
+        placeholder_text: "# TODO place label3 at row 3, column 0 and radio_button3 at\
+      \ row 3 and column 1"
+        initial_state:
+          length: 78
+          offset: 1693
+        initialized_from_dependency: false
+        encrypted_possible_answer: dm6ZZ9dayeWEw0IizT21xOXkGzEzxsoAwrL1ruX7GaqRA75fuGPbyDH5evUyN0QRef+Fs4rkBvtccICJH1pGDOvrr7P/RDATQVSH6/PpMRv73QTWh9mBiYL0b0GEFDhT
+        selected: false
+        status: Unchecked
+      - offset: 1772
+        length: 46
+        placeholder_text: "# TODO place label4 and radio_button4 at row 4"
+        initial_state:
+          length: 46
+          offset: 1772
+        initialized_from_dependency: false
+        encrypted_possible_answer: kERZWF5xYvvPz5WeeiIu1/cxnd2WsQZHcAl2wT3Emj/OVB6fC6rOWiz2DQjJFN48uuZ1vO9UtadA9g/dvRHgvyoLhhLjs+BqgQu3ils4aAUK1UqzZm6cyaJwyxf+Fov+
+        selected: false
+        status: Unchecked
+      - offset: 1819
+        length: 46
+        placeholder_text: "# TODO place label5 and radio_button5 at row 5"
+        initial_state:
+          length: 46
+          offset: 1819
+        initialized_from_dependency: false
+        encrypted_possible_answer: boNGP2Qxxoi8gOBBlFQo38ZTCVvWrXUkMe8gVYiGYdmLluHzTJx8exGiO4KL3/a+urmFt5rlz7ZYzunvGkAyDqPl5BcSFNMUo+05spqho+dKVQKMMoUCq+WpRWkMU5wm
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

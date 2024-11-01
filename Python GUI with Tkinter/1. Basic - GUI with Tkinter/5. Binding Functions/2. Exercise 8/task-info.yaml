@@ -1,0 +1,49 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 252
+        length: 73
+        placeholder_text: "# TODO make the counter decrease by 1 before updating the text\
+      \ of label1."
+        initial_state:
+          length: 73
+          offset: 252
+        initialized_from_dependency: false
+        encrypted_possible_answer: Gj72mlH0z5rSoE7x7vIfir2depSSH42ndzGNCjjyige8vfAkNZA2VFSQa8FHOHdUz++nqFrx4yDq61IJ4HNmgNG+bEaXdGeJyxSCMtwwnHbBAyNSFb0WoNuqrkZBmZ0I
+        selected: false
+        status: Unchecked
+      - offset: 736
+        length: 40
+        placeholder_text: "# TODO insert the input event to bind to"
+        initial_state:
+          length: 40
+          offset: 736
+        initialized_from_dependency: false
+        encrypted_possible_answer: WPnTJ6R/zxzNgyz5+KsTmg==
+        selected: false
+        status: Unchecked
+      - offset: 779
+        length: 58
+        placeholder_text: insert the name of the function that decreases the counter
+        initial_state:
+          length: 58
+          offset: 779
+        initialized_from_dependency: false
+        encrypted_possible_answer: FLULtdMCl7tdnHRCic9zFg==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

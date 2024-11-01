@@ -1,0 +1,48 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 124
+        length: 24
+        placeholder_text: "# TODO create the window"
+        initial_state:
+          length: 24
+          offset: 124
+        initialized_from_dependency: false
+        encrypted_possible_answer: VSNqshU5wmBIJNFJ4g0HGw==
+        selected: false
+        status: Unchecked
+      - offset: 156
+        length: 31
+        placeholder_text: "# TODO give your window a title"
+        initial_state:
+          length: 31
+          offset: 156
+        initialized_from_dependency: false
+        encrypted_possible_answer: zVdYYNyBaKept9VLbOBVExLhoDel5kpp8NMKs6ZfrivbiY4gZjrMLGyiYHrhR0SF
+        selected: false
+        status: Unchecked
+      - offset: 195
+        length: 61
+        placeholder_text: "# TODO give your window some geometry - 400x300 should be ok."
+        initial_state:
+          length: 61
+          offset: 195
+        initialized_from_dependency: false
+        encrypted_possible_answer: uf8ndjtFPCZSc3dXZEkUVloaspbLC2C9GrQrP+ovuq4=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

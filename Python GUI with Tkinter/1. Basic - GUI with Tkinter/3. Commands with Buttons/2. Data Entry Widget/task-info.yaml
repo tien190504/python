@@ -1,0 +1,38 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 274
+        length: 46
+        placeholder_text: "# TODO create a label and add it to the window"
+        initial_state:
+          length: 46
+          offset: 274
+        initialized_from_dependency: false
+        encrypted_possible_answer: sZRCK3xUctq0/kw6pNhGOrr+TmsojLVyzSgT/LfEAkbfZBa8ENsDoM05pTlgEvzF
+        selected: false
+        status: Unchecked
+      - offset: 331
+        length: 49
+        placeholder_text: "# TODO Create a button that used  command=clicked"
+        initial_state:
+          length: 49
+          offset: 331
+        initialized_from_dependency: false
+        encrypted_possible_answer: PwXphS46cYbMgv6cCTKJCtV3Wi9qNhgTH914b7obNTxjr2v9GeAAGxsGyqWwU/xDKslFrYlnPCv0ztf+PeVQyw==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,66 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 80
+        length: 30
+        placeholder_text: "# TODO define global variables"
+        initial_state:
+          length: 30
+          offset: 80
+        initialized_from_dependency: false
+        encrypted_possible_answer: QCiSo6qEcDKjwqPthmhdnxbGyrIGugRFHsekuj1LD8rJyLTMvEqZ/SVEHKn7qRq9o6FE/2hKU7vEsGSm1/IGIg6D0LWijY8RebFaqXcj4mCA7YU57OTqdFhDmKY48C3SvwjpYXnUPMxisM1ASckZtw==
+        selected: false
+        status: Unchecked
+      - offset: 136
+        length: 27
+        placeholder_text: "# TODO define all functions"
+        initial_state:
+          length: 27
+          offset: 136
+        initialized_from_dependency: false
+        encrypted_possible_answer: CfKvgrZkD7dsDvGLy0wRTyxSppiB9TOqunmcxsCRdGMdfg0gqM48W32v0U4wk3B3J/ECe01RcQCTcYbML8tmMPDrffWXokx/jDqwpc4ByhtBtxE7EizkRTkVJgBvYhQfci6vWljZT8m8HpjBKbwhtWnvUhpcOTZRS9lp3XvsloBv63RT1swL8oS8RQ01UGgKs+zp6bvfsDCsPc6Q1AlKgN1+JqHQmJHsCwUSBuDAKjmX7KXd56iHPdxvUTO1/ue7Aung68F0tounoAcFrNRJ2MB49Dgp1BG7LEKgkTdeBZGw8X7O1KLbDTmCF+Zw0O58HCowFJ0SzvmGwtWWrb7X7d82IyRBLYSDGX6xLpxmYHXO+jzaz1YD6TRcZPDz3oDlhD/fyVu2Pq6Cpft1y5NSGIprAv8Rp1RBFWb07EutA6+u6QTvIJjaMKoKtpdZhy1no67tUtMkLPcN3K37R798Qby5hPhXMsJW1pyenWDrHPG4rs54Yf03lyxqpRUVuHIVcfEKzHYj/mnBv1/QAnfkfWlsQO2kW2Nk9W6rsD89CDlQca2FuJTUt+tEmHYwoRKaJe+1wdSw/xmEBauwqE2FgS+bmLWEHVnnFINlkvh8qZq8Hza8wx+hiZSWNkYYbe2ugueeH8IhFeBtN99dMxMedXQ0z0Tm2Zdt1jo2r9Mz2TkQV2tces9qMM8UB/sge9NScgTP8OY8hOjDTINwEK49XKbFui1j1/pKLturVCMaECCvXHuDuOgx8qeFuNP+3mIE0bwgBq9AMJQFqNZH9PEcxZllTb/vbxwwJpBQw55vnwZMhpjPlKePSJLhPWRwFgdxutcOeLLgHN9Iq4064bJr5XU8srFO7qq9ayBsehzUVcDuAJD1uZ8jQ+2U+KoBMaa9YtO36aqFBIw0iZTfpEmFJ/ZUDIoBJGg0vALEji505XIGyBU9z4WZ/yF+Dalelo5bMJenMpL8pTHWzPtmIc7asFVxq0Qc7165julbR+QPfIBIguZVGkUNUueWSyeYhVy1+H0z332IVv4aNIclE4cJueI3PL7r3nPojltqLEFa4QwsB5HKT5Y7fEQPqzVxLWaAquMqQymXupLD0rzZif/3DOefwYuODaK0b34z2dr/44SGjF/GtUjDgixUU+txdZoBZSjwB0B1uU81eHtJwSEaFQMJY0kSmUm0jfSo4ueP4LZ4KvYyyX4t0Tyn+DzSA7YH+ku1aw0Jre1pqsYGywERQ62vITTK4sYNTnRhN252zTtYj1oe1ZMDw6wdnGm2lzQ4Q6h5y6cFTu+RGBpWZkClFGHh250eD5tEmIf0r9Xfo10VavyD7xty5tVZgO6P+jGoHAWSiiQOXWPHxYfk4xq91f1dmGb/CkWPSRT5ypq4y7mmKySxRPMIrN6AYegPuT25yVBYWN4wTh7Itx+PNjgg4KtvLoDL33Y9akxHxWFp6Vq1hhaESmBlOLlcZWQi1I2hpoAwL8rxYX3cXLfZjlae6Oq7CIf0jrnOnDPTB7O+2XUkJIrOkKKsrXKFzT5d2MQXyyN7PiXnUyDHpk6bHfSTg2fwv00jZ4CiWCOKtkz5a5frs4vDeoWynKzY4N+PqHLxTh0M65M06w4kjNfB7lKi2GVjy4gV78jyEQK9D4AnQG3QX6rxj/55VEg9YUzRaO1pC7fLdYklKT0WZZGyQN1iTXayNUwlJRoAOhGZJSZLWWBNqSo0vAih9lHzQQHnCSG+rfJCIVIi0T8zBZlIYDsmaegPvDc/gqqkr4EwMobUeuudUm2rzg1sooBwH01kxC2pnmslyhr48hSza8WhsWep0eZjKxx9Ck79T7pr2MfFst2SrO7H/zfkKVI7p2gNqrjj
+        selected: false
+        status: Unchecked
+      - offset: 298
+        length: 21
+        placeholder_text: "# TODO create widgets"
+        initial_state:
+          length: 21
+          offset: 298
+        initialized_from_dependency: false
+        encrypted_possible_answer: 6rWv1KZNfGo3ekahse9QXqlLya7D04wyuY2FisUEO7ATL52pBjhVcJ7pDVO0n+/R8qe2mphFNsUuHSEnmD0KK67EJrV8lL/zCubZA9N2BNTvilA6lExdu9O1FJuSvJjaYdR0hFGO9P5KMBIIuD+qnWX0jNloc7fdTAAs/C5BIrCN6TpjGwJmjcDuI3fovZn7YnvEsaFdeHykibaWoOdAa50QHLhezkqlcsrbh6HjtOXTdecYFURvB3Iik9pfljKb0IYd6KEWGmtAO1syAdT2a3k9PnKpOsrK3tZi/7ZwTktzbHxy1DPrxC9ORKfgcEjprQwVXGAYZWGGizgwwfwFbw==
+        selected: false
+        status: Unchecked
+      - offset: 373
+        length: 57
+        placeholder_text: "# TODO place widgets into window container using a layout"
+        initial_state:
+          length: 57
+          offset: 373
+        initialized_from_dependency: false
+        encrypted_possible_answer: UAb/jniXmFZyfGQJtt2YaTaGE1X7gSZLodFg3/yvfzlX3fU8HXzWYyzAzN2ZLKJdc4gOvWlgU6UpIhND2O8M2Mo0AA67uj1i42uz1PPXUUcJ7UxQyIYBDLEvX1hnz/jk5E0xPlBrJebxmscxl+OqSE0KdG96JkvyD/u0a9CK3O4u2zYK8KGLWkAEdXjpPncjPddG6mwtjbnPHauFocmVLa/akWVNMSq2fRExoSamdu0=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

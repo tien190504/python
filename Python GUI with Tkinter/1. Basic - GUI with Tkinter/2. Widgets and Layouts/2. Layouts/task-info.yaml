@@ -1,0 +1,46 @@
+type: theory
+files:
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 284
+        length: 26
+        placeholder_text: "# TODO create a red button"
+        initial_state:
+          length: 26
+          offset: 284
+        initialized_from_dependency: false
+        encrypted_possible_answer: PwXphS46cYbMgv6cCTKJCgJtIDqusJoGl6CQPrHjvCV8b3acvJZTeL02g/Gy/oXf
+        selected: false
+        status: Unchecked
+      - offset: 322
+        length: 27
+        placeholder_text: "# TODO create a blue button"
+        initial_state:
+          length: 27
+          offset: 322
+        initialized_from_dependency: false
+        encrypted_possible_answer: PwXphS46cYbMgv6cCTKJCvZG/SvFbnkGrnwbdp7jkvf7JYADWs4i1fA5c3WxZ7Zs
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,51 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 145
+        length: 87
+        placeholder_text: "# TODO create the welcome message and configure the text attribute\
+      \ of the message_label"
+        initial_state:
+          length: 87
+          offset: 145
+        initialized_from_dependency: false
+        encrypted_possible_answer: cbf9eTkS61iBG/6GjntUhC0rqnoqh8MEDgySoR2O74dHy8yXVpWeV/EwsZ0MuXz9ik4M0FhPZ6tRLgyDjQf9KJQv6AFV3fxeR1kQbSE62p8ywuMn2u0gZAZwBnSn96YqNyVttIf+A2Bg7vlK8bj77ZQmpMNxFS+GGQcAEwQh1LQ=
+        selected: false
+        status: Unchecked
+      - offset: 337
+        length: 26
+        placeholder_text: "# TODO Create your widgets"
+        initial_state:
+          length: 26
+          offset: 337
+        initialized_from_dependency: false
+        encrypted_possible_answer: NgEfcPIwjk64O/VOOV1W/3cYIQeoImKvRuC+Al9O4Mc48Jk0Jw8e2i0S4olJ83AN0wHBDmV2PUdFrNiPHf1q4yqfrfJ9VCxmg2UcNYzFxdsq7Ln8CuGgsaKOUp14VGkImE+jfeRIhNMvWPFfShQQgUxO73txRiTKMpnTpmbsp/sNuEWms4YCqIBcHWKFGGOMdwG89wFt+SKXHv+chJiW056he4eKZDT/wNHRdlPEywXkjoJpabkKvrTbwx+okPa/i6w1iurglSHA5e4dzuv4qOeKBAJc5XJnuY4OfXu1/mgmYxYt/F+DBwcpf0vDb2I8k65kagNkQkreT6IiFxdCB/Cx6aiT8Rus4nQa/lnhCQ3l5GCdYexARVoWN/0FpK13Vkj75aqxKuUw4ASZlRHpdUafosUk+xuJ4rTpnCOD7/xRbP5D3jGh/Xw6QQtGpSMg
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: example.bmp
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

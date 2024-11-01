@@ -1,0 +1,39 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 66
+        length: 51
+        placeholder_text: "# TODO make a variable to store the previous colour"
+        initial_state:
+          length: 51
+          offset: 66
+        initialized_from_dependency: false
+        encrypted_possible_answer: aVu2O00O5e8IKAPC2/+iyN0yfklaGJw5TxAdgDibVJw=
+        selected: false
+        status: Unchecked
+      - offset: 143
+        length: 83
+        placeholder_text: "# TODO define a function that changes the window background\
+      \ to the previous colour."
+        initial_state:
+          length: 83
+          offset: 143
+        initialized_from_dependency: false
+        encrypted_possible_answer: GUynpgxA+veN5McWq/FTtkq6XHUW3OM+cyxAswhLOQKefblfgKWjAuaKNgr1Yl/sGuAaQULRTPfdQc45CZbfGSht9TR+RdmduxKYbHe3YzzQD+lhqPa4y2+wGgVz7Bw5kfxXkpJ8ld0q329PqAu/8g==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

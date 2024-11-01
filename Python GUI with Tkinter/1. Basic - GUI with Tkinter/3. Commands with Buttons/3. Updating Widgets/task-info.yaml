@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 170
+        length: 76
+        placeholder_text: "# TODO Use the config function to change the text of the text1\
+      \ Label widget."
+        initial_state:
+          length: 76
+          offset: 170
+        initialized_from_dependency: false
+        encrypted_possible_answer: 4minO4kpD9mampJlJ/gxUhnOurLKS5OdG92H4h+Vg0Y=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

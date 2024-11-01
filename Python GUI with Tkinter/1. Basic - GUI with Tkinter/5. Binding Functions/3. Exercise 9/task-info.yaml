@@ -1,0 +1,61 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 64
+        length: 76
+        placeholder_text: "# TODO define a function that updates the text option of label1\
+      \ with \"Hello\""
+        initial_state:
+          length: 76
+          offset: 64
+        initialized_from_dependency: false
+        encrypted_possible_answer: IzYjktb+lCLl3ZRrmh4i2r3NzCke+fk+UmNF6Be0+8XctEa7AZSys+pnmNnrnlHrXO7XooabjG3fdYLqk1G+2Q==
+        selected: false
+        status: Unchecked
+      - offset: 143
+        length: 78
+        placeholder_text: "# TODO define a function that updates the text option of label1\
+      \ with \"Goodbye\""
+        initial_state:
+          length: 78
+          offset: 143
+        initialized_from_dependency: false
+        encrypted_possible_answer: vYrKJrRpKB4M8rsASLqE7fJSXwa0zzU8AM2lT1Af75jxwZWLC7fIz1Q0zx4BkOKlhq2my8B7NBzUe6f5q5UKCQ==
+        selected: false
+        status: Unchecked
+      - offset: 466
+        length: 64
+        placeholder_text: "# TODO add the input event for when the mouse enters the window."
+        initial_state:
+          length: 64
+          offset: 466
+        initialized_from_dependency: false
+        encrypted_possible_answer: 4nMVC/IOu4ZS10DSQRXveA==
+        selected: false
+        status: Unchecked
+      - offset: 551
+        length: 78
+        placeholder_text: "# TODO bind the window to the input event for when the mouse\
+      \ leaves the window"
+        initial_state:
+          length: 78
+          offset: 551
+        initialized_from_dependency: false
+        encrypted_possible_answer: JhxPy34FDG4g/G7Iqkp0yEbfeWgtmjhxDblSKO1bZzI=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

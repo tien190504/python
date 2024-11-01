@@ -1,0 +1,76 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 301
+        length: 22
+        placeholder_text: "# TODO create the head"
+        initial_state:
+          length: 22
+          offset: 301
+        initialized_from_dependency: false
+        encrypted_possible_answer: jYMVmzwZC6WojO2UnB5Z/U11QaJoLo/zSUTAxGBOk53iNXskBsns4e6voTlFciE1oF6wl3jscS6JC5IW0KPAXK9wiSGjDwBAshwNbEevtW9HL5VClo+8vfNd0E8/lpqhsnrsroD5j5/xeYcO6WrAUgyos2bn+RNEsFgx/yB9q7F3NkmYzO+ePr1DeQS3XGU5GJ1uVAo2vT4P4p+kMNhyRA==
+        selected: false
+        status: Unchecked
+      - offset: 336
+        length: 22
+        placeholder_text: "# TODO create the body"
+        initial_state:
+          length: 22
+          offset: 336
+        initialized_from_dependency: false
+        encrypted_possible_answer: lg0sk4lT98lYUjUCnEWAsZmlLIelL0dh3tg58uKZeAYe02wZQMHedTwo+crGMkhwqu5A935peo+KPFIcgfa32jBPpV6OtoElwUIVUxV6JjUrbD/cA0vLo+X0XDVGpT30
+        selected: false
+        status: Unchecked
+      - offset: 370
+        length: 22
+        placeholder_text: "# TODO create the arms"
+        initial_state:
+          length: 22
+          offset: 370
+        initialized_from_dependency: false
+        encrypted_possible_answer: kDCdM2W/xS6+YoS5CNhU8PhTGhSS96EmbzTRsKOyD7snIRJfq2jc7GY7SHvNL0RRudNxF+E3nmvnsyFVaHiC3FTXCEIlAG4PJOSOjJpyH9quBWGCNY6p1rxOHoi7fPzS
+        selected: false
+        status: Unchecked
+      - offset: 408
+        length: 26
+        placeholder_text: "# TODO create the left leg"
+        initial_state:
+          length: 26
+          offset: 408
+        initialized_from_dependency: false
+        encrypted_possible_answer: n/SkdjMTR6y4M2wyeV7krDzLr2N7CugSOHkwzJ9LXpDHwNZU/PJdypw4Fc2IN0YBQ5sfhqAqO7FsGf1u0cWgoS8n+C3AbBv5XX3aC4OL18BPWiy3Jg0m+IHkVIQlO23F
+        selected: false
+        status: Unchecked
+      - offset: 451
+        length: 27
+        placeholder_text: "# TODO create the right leg"
+        initial_state:
+          length: 27
+          offset: 451
+        initialized_from_dependency: false
+        encrypted_possible_answer: n/SkdjMTR6y4M2wyeV7krN2X2OXdQW8G0FmBqNz+rq3v5WTvAVLI2vfV3Pip6rfHb/IN5cvXc82YwMmTKaY0MIuATAONuAKURtqaZbL4DgmPDQhUQsY2j44MhQ+ktyjl
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

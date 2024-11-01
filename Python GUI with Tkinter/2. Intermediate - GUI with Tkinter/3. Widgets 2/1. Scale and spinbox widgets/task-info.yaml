@@ -1,0 +1,60 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 70
+        length: 30
+        placeholder_text: "# TODO give the window a title"
+        initial_state:
+          length: 30
+          offset: 70
+        initialized_from_dependency: false
+        encrypted_possible_answer: ww3jwytFJVdAjSqHIOVKFBnDLjs3uATqbpIA/Mwkovc5ZC33XzItNKK50bpqlgahRL8FYA26B45btNlWNNEN2Q==
+        selected: false
+        status: Unchecked
+      - offset: 101
+        length: 40
+        placeholder_text: "# TODO make the window 450 by 100 pixels"
+        initial_state:
+          length: 40
+          offset: 101
+        initialized_from_dependency: false
+        encrypted_possible_answer: 9SZEcqVSyIdKkrFrEja/bNisJ3kmgrlhUhutijTaO6M=
+        selected: false
+        status: Unchecked
+      - offset: 419
+        length: 57
+        placeholder_text: "# TODO pack the scale and spinbox widgets into the window"
+        initial_state:
+          length: 57
+          offset: 419
+        initialized_from_dependency: false
+        encrypted_possible_answer: RFU4PWBvNfCtSbrELQsqYn8u881c8UKOpxvhpi9+ar0=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+  - name: example.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_mac.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: expected_output_win.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

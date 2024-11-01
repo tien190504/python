@@ -1,0 +1,29 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 618
+        length: 71
+        placeholder_text: "# TODO enter the name of the input event you want the button\
+      \ to bind to"
+        initial_state:
+          length: 71
+          offset: 618
+        initialized_from_dependency: false
+        encrypted_possible_answer: lfr/ILcCxcfikZtljSbJNQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true
