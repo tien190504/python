@@ -104,8 +104,6 @@ class MazeGame:
                     self.maze[y + dy][x + dx] = 1
                     self.maze[nx][ny] = 1
                     dfs(nx, ny)
-
-        # Đặt toàn bộ mê cung là tường
         for row in range(self.maze_size):
             for col in range(self.maze_size):
                 self.maze[row][col] = 0
